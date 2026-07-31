@@ -45,7 +45,7 @@ with st.sidebar:
             start_time = st.time_input("Start time", step=300)
         with col2:
             end_time = st.time_input("End time", step=300)
-        label = st.selectbox("Label", options=["A", "P", "B"])
+        label = st.selectbox("Label", options=["Ash", "Pau", "Both"])
         submitted = st.form_submit_button("Add")
         if submitted and title.strip():
             start_dt = datetime.combine(date, start_time)
