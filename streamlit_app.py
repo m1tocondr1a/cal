@@ -15,7 +15,7 @@ from datetime import datetime, date, timedelta
 # Config / constants
 # ---------------------------------------------------------------------------
 
-st.set_page_config(page_title="Calendar", layout="wide")
+st.set_page_config(page_title="Nuestra Calendar", layout="wide")
 
 DATE_FMT = "%d/%m/%Y"   # European date format: dd/mm/yyyy
 TIME_FMT = "%H:%M"      # 24-hour time format
@@ -74,7 +74,7 @@ def week_bounds(d: date):
 # Sidebar: navigation + add event form
 # ---------------------------------------------------------------------------
 
-st.sidebar.title("📅 Calendar")
+st.sidebar.title("📅 Nuestra Calendar")
 
 view = st.sidebar.radio("View", ["Month", "Week"], index=0 if st.session_state.view == "Month" else 1)
 st.session_state.view = view
@@ -154,7 +154,7 @@ if st.session_state.events:
 # Main area
 # ---------------------------------------------------------------------------
 
-st.title("📅 My Calendar")
+st.title("📅 Nuestra Calendar")
 
 today = date.today()
 
